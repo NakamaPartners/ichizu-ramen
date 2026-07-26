@@ -4,12 +4,12 @@ import { FadeIn } from '@/components/ui/fade-in';
 import { menuData } from '@/data/menu';
 import { Logo } from '@/components/Logo';
 
-// Images
-import heroImg from '@assets/generated_images/hero.jpg';
-import atmosphereImg from '@assets/generated_images/atmosphere.jpg';
-import chefImg from '@assets/generated_images/chef.jpg';
-import noodlePullImg from '@assets/generated_images/noodle-pull.jpg';
-import gyozaImg from '@assets/generated_images/gyoza.jpg';
+// Real photos
+import heroImg from '@/assets/real/hero-b.jpg';
+import atmosphereImg from '@/assets/real/interior-d.jpg';
+import chefImg from '@/assets/real/chef-b.jpg';
+import noodlePullImg from '@/assets/real/noodle-a.jpg';
+import gyozaImg from '@/assets/real/gyoza-c.jpg';
 
 export default function Home() {
   const { scrollY } = useScroll();
