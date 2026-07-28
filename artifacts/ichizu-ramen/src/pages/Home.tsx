@@ -52,6 +52,8 @@ export default function Home() {
             src={heroImg} 
             alt="Ramen overhead view" 
             className="w-full h-full object-cover object-center"
+            fetchPriority="high"
+            decoding="async"
           />
         </motion.div>
 
@@ -102,7 +104,7 @@ export default function Home() {
             </FadeIn>
           </div>
           <FadeIn direction="left" delay={0.3} className="relative h-[60vh] md:h-[80vh]">
-            <img src={noodlePullImg} alt="Noodle Pull" className="w-full h-full object-cover filter grayscale-[20%]" />
+            <img src={noodlePullImg} alt="Noodle Pull" className="w-full h-full object-cover filter grayscale-[20%]" loading="lazy" decoding="async" />
             <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
           </FadeIn>
         </div>
@@ -128,7 +130,7 @@ export default function Home() {
             </FadeIn>
           </div>
           <FadeIn direction="right" delay={0.3} className="flex-1 w-full aspect-square md:aspect-[3/4]">
-            <img src={chefImg} alt="Chef at work" className="w-full h-full object-cover" />
+            <img src={chefImg} alt="Chef at work" className="w-full h-full object-cover" loading="lazy" decoding="async" />
           </FadeIn>
         </div>
       </section>
@@ -142,7 +144,7 @@ export default function Home() {
           viewport={{ once: true }}
           className="w-full h-full"
         >
-          <img src={atmosphereImg} alt="Restaurant Atmosphere" className="w-full h-full object-cover opacity-60" />
+          <img src={atmosphereImg} alt="Restaurant Atmosphere" className="w-full h-full object-cover opacity-60" loading="lazy" decoding="async" />
           <div className="absolute inset-0 flex items-center justify-center">
             <p className="font-serif text-2xl md:text-4xl tracking-widest text-white/90">915 WASHINGTON ST</p>
           </div>
@@ -164,7 +166,7 @@ export default function Home() {
             
             <FadeIn delay={0.2}>
               <div className="relative aspect-square w-full mt-12">
-                <img src={gyozaImg} alt="Pork Gyoza" className="w-full h-full object-cover" />
+                <img src={gyozaImg} alt="Pork Gyoza" className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
               </div>
             </FadeIn>
